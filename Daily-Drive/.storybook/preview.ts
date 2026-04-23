@@ -11,9 +11,13 @@ const preview: Preview = {
     },
 
     backgrounds: {
-      default: 'black',
-      values: [{ name: 'black', value: '#000000' }],
+        options:{
+          black: { name: 'Black', value: '#000000' },
+        },
     },
+    initialGlobals: {
+    backgrounds: { value: 'black' },
+  },
 
     a11y: {
       // 'todo' - show a11y violations in the test UI only
