@@ -1,5 +1,6 @@
 import type { Preview } from '@storybook/react-vite'
 
+
 const preview: Preview = {
   parameters: {
     controls: {
@@ -7,6 +8,11 @@ const preview: Preview = {
        color: /(background|color)$/i,
        date: /Date$/i,
       },
+    },
+
+    backgrounds: {
+      default: 'black',
+      values: [{ name: 'black', value: '#000000' }],
     },
 
     a11y: {

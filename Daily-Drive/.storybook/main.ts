@@ -1,4 +1,7 @@
 import type { StorybookConfig } from '@storybook/react-vite';
+import tailwindcss from '@tailwindcss/vite';
+import { mergeConfig } from 'vite';
+
 
 const config: StorybookConfig = {
   "stories": [
@@ -12,6 +15,11 @@ const config: StorybookConfig = {
     "@storybook/addon-docs",
     "@storybook/addon-onboarding"
   ],
-  "framework": "@storybook/react-vite"
+  "framework": "@storybook/react-vite",
+  viteFinal: async (config) => {
+  return mergeConfig(config, {
+    plugins: [tailwindcss()],
+  });
+},
 };
 export default config;
