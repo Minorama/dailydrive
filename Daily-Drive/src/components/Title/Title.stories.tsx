@@ -1,15 +1,15 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import '../../../App.css';
+import '../../App.css';
 
-import { Textarea } from './textarea';
+import { Title } from './Title';
 
 const meta = {
-    component: Textarea,
+    component: Title,
     parameters: {
         layout: 'centered',
     },
     tags: ['autodocs'],
-} satisfies Meta<typeof Textarea>;
+} satisfies Meta<typeof Title>;
 
 export default meta;
 
@@ -17,11 +17,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
     args: {
-        placeholder: 'Placeholder Text',
-    },
-};
-export const WithValue: Story = {
-    args: {
-        value: 'Hello world',
+        children: 'This is a Title',
     },
 };

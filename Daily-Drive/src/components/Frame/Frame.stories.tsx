@@ -1,27 +1,24 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import '../../../App.css';
+import '../../App.css';
 
-import { Textarea } from './textarea';
+import { Frame } from './Frame';
 
 const meta = {
-    component: Textarea,
+    component: Frame,
     parameters: {
         layout: 'centered',
     },
     tags: ['autodocs'],
-} satisfies Meta<typeof Textarea>;
+} satisfies Meta<typeof Frame>;
 
 export default meta;
 
 type Story = StoryObj<typeof meta>;
 
+const child = <p className="text-white">This is some text</p>;
+
 export const Default: Story = {
     args: {
-        placeholder: 'Placeholder Text',
-    },
-};
-export const WithValue: Story = {
-    args: {
-        value: 'Hello world',
+        children: child,
     },
 };
