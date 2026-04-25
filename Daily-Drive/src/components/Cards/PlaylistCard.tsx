@@ -17,10 +17,20 @@ const PlaylistCard = ({ title, description }: PlaylistCardProps) => {
                     <p className="text-grey-400 font-light italic">{description}</p>
                 </div>
                 <div className="flex flex-row">
-                    <Button variant={'ghost'} size={'icon-md'} aria-label="Edit button">
+                    <Button
+                        variant={'ghost'}
+                        size={'icon-md'}
+                        aria-label="Edit button"
+                        className="cursor-pointer"
+                    >
                         <Pencil size={35} />
                     </Button>
-                    <Button variant={'destructive'} size={'icon-md'} aria-label="Delete button">
+                    <Button
+                        variant={'destructive'}
+                        size={'icon-md'}
+                        aria-label="Delete button"
+                        className="cursor-pointer"
+                    >
                         <Trash2 size={35} />
                     </Button>
                 </div>

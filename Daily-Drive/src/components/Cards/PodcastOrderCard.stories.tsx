@@ -19,6 +19,6 @@ export const Default: Story = {
     args: {
         title: 'This is the title',
         description: 'This is the description',
-        pinned: true
+        pinned: true,
     },
 };

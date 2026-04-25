@@ -17,14 +17,19 @@ const PodcastOrderCard = ({ title, description, pinned }: PodcastOrderCard) => {
                     <p className="text-grey-400 font-light italic">{description}</p>
                 </div>
                 <div className="flex flex-row">
-                    <Button variant={'destructive'} size={'icon-md'} aria-label="Delete button">
+                    <Button
+                        variant={'destructive'}
+                        size={'icon-md'}
+                        aria-label="Delete button"
+                        className="cursor-pointer"
+                    >
                         <Trash2 size={35} />
                     </Button>
                     <Button
                         variant={'ghost'}
                         size={'icon-md'}
                         aria-label="Pin button"
-                        className={pinned ? 'text-white' : 'rotate-45'}
+                        className={`cursor-pointer ${pinned ? 'text-white' : 'rotate-45'}`}
                     >
                         <Pin size={35} />
                     </Button>
