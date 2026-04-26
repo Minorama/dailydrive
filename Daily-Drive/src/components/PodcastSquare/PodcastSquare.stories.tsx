@@ -1,15 +1,15 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import '../../App.css';
 
-import { BlockText } from './BlockText';
+import { PodcastSquare } from './PodcastSquare';
 
 const meta = {
-    component: BlockText,
+    component: PodcastSquare,
     parameters: {
         layout: 'centered',
     },
     tags: ['autodocs'],
-} satisfies Meta<typeof BlockText>;
+} satisfies Meta<typeof PodcastSquare>;
 
 export default meta;
 

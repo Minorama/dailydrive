@@ -1,15 +1,15 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import '../../App.css';
 
-import { BlockText } from './BlockText';
+import { Searchbar } from './Searchbar';
 
 const meta = {
-    component: BlockText,
+    component: Searchbar,
     parameters: {
         layout: 'centered',
     },
     tags: ['autodocs'],
-} satisfies Meta<typeof BlockText>;
+} satisfies Meta<typeof Searchbar>;
 
 export default meta;
 
