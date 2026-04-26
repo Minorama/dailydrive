@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import '../../App.css';
+import '../../../App.css';
 
 import { PodcastSquare } from './PodcastSquare';
 
@@ -16,5 +16,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-    args: {},
+    args: {
+        onRemove: () => {},
+    },
 };

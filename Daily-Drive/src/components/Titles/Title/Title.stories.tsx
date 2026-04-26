@@ -1,20 +1,22 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import '../../App.css';
+import '../../../App.css';
 
-import { SongSquare } from './SongSquare';
+import { Title } from './Title';
 
 const meta = {
-    component: SongSquare,
+    component: Title,
     parameters: {
         layout: 'centered',
     },
     tags: ['autodocs'],
-} satisfies Meta<typeof SongSquare>;
+} satisfies Meta<typeof Title>;
 
 export default meta;
 
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-    args: {},
+    args: {
+        children: 'This is a Title',
+    },
 };

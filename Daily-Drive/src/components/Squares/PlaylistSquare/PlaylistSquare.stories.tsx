@@ -1,15 +1,15 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import '../../App.css';
+import '../../../App.css';
 
-import { Subtitle } from './Subtitle';
+import { PlaylistSquare } from './PlaylistSquare';
 
 const meta = {
-    component: Subtitle,
+    component: PlaylistSquare,
     parameters: {
         layout: 'centered',
     },
     tags: ['autodocs'],
-} satisfies Meta<typeof Subtitle>;
+} satisfies Meta<typeof PlaylistSquare>;
 
 export default meta;
 
@@ -17,6 +17,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
     args: {
-        children: 'This is subtitle',
+        onRemove: () => {},
+        image: '',
     },
 };

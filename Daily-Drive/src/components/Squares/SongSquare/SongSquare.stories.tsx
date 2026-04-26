@@ -1,20 +1,22 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import '../../App.css';
+import '../../../App.css';
 
-import { PlaylistSquare } from './PlaylistSquare';
+import { SongSquare } from './SongSquare';
 
 const meta = {
-    component: PlaylistSquare,
+    component: SongSquare,
     parameters: {
         layout: 'centered',
     },
     tags: ['autodocs'],
-} satisfies Meta<typeof PlaylistSquare>;
+} satisfies Meta<typeof SongSquare>;
 
 export default meta;
 
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-    args: {},
+    args: {
+        onRemove: () => {},
+    },
 };

@@ -1,20 +1,22 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import '../../App.css';
 
-import { Searchbar } from './Searchbar';
+import { SearchBar } from './Searchbar';
 
 const meta = {
-    component: Searchbar,
+    component: SearchBar,
     parameters: {
         layout: 'centered',
     },
     tags: ['autodocs'],
-} satisfies Meta<typeof Searchbar>;
+} satisfies Meta<typeof SearchBar>;
 
 export default meta;
 
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-    args: {},
+    args: {
+        placeholder: 'Search for something',
+    },
 };
