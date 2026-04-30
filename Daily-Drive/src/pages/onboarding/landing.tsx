@@ -1,7 +1,7 @@
 import { Button } from '@/components/shadcn/ui/button';
 import { Title } from '@/components/Titles/Title/Title';
 
-const Onboarding = () => {
+const Landing = () => {
     return (
         <div className="flex min-h-screen h-full w-full justify-center items-center">
             <div className="flex flex-col gap-12 items-center justify-center">
@@ -19,4 +19,4 @@ const Onboarding = () => {
     );
 };
 
-export { Onboarding };
+export { Landing };
